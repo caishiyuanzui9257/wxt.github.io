@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="bookMana"
+  id="myeclipse.1279271979625"
+  context-root="/bookMana"
+  j2ee-spec="5.0"
+  archive="bookMana.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="successAdd">/common/add_success.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        
+        
+        
+        <action name="reg_user" class="userAction" method="reg_user">
+        </action>
+        <action name="userMana_daishenhe" class="userAction" method="userMana_daishenhe">
+             <result name="success">/admin/user/userMana_daishenhe.jsp</result>
+        </action>
+        <action name="userShenhe" class="userAction" method="userShenhe">
+        </action>
+        <action name="userMana_yishenhe" class="userAction" method="userMana_yishenhe">
+             <result name="success">/admin/user/userMana_yishenhe.jsp</result>
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userAll" class="userAction" method="userAll">
+             <result name="success">/admin/user/userAll.jsp</result>
+        </action>
+        <action name="userDetail" class="userAction" method="userDetail">
+             <result name="success">/admin/user/userDetail.jsp</result>
+        </action>
+        
+         <action name="*_*" class="{1}Action" method="{2}">
+            <result name="success">${url}</result>
+		</action>
+        
+        <action name="reg_tea" class="teaAction" method="reg_tea">
+        </action>
+        <action name="teaMana_daishenhe" class="teaAction" method="teaMana_daishenhe">
+             <result name="success">/admin/tea/teaMana_daishenhe.jsp</result>
+        </action>
+        <action name="teaShenhe" class="teaAction" method="teaShenhe">
+        </action>
+        <action name="teaMana_yishenhe" class="teaAction" method="teaMana_yishenhe">
+             <result name="success">/admin/tea/teaMana_yishenhe.jsp</result>
+        </action>
+        <action name="teaDel" class="teaAction" method="teaDel">
+        </action>
+        <action name="teaAll" class="teaAction" method="teaAll">
+             <result name="success">/admin/tea/teaAll.jsp</result>
+        </action>
+        <action name="teaDetail" class="teaAction" method="teaDetail">
+             <result name="success">/admin/tea/teaDetail.jsp</result>
+        </action>
+        
+        
+        
+         
+        
+        <action name="adminAdd" class="adminAction" method="adminAdd">
+        </action>
+        <action name="adminDel" class="adminAction" method="adminDel">
+        </action>
+        <action name="adminManage" class="adminAction" method="adminManage">
+            <result name="success">/admin/index/adminManage.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        <action name="catelogMana" class="catelogAction" method="catelogMana">
+             <result name="success">/admin/catelog/catelogMana.jsp</result>
+        </action>
+        <action name="catelogAdd" class="catelogAction" method="catelogAdd">
+        </action>
+        <action name="catelogDel" class="catelogAction" method="catelogDel">
+        </action>
+        <action name="catelogAll" class="catelogAction" method="catelogAll">
+             <result name="success">/qiantai/catelog/catelogAll.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="bookAdd" class="bookAction" method="bookAdd">
+        </action>
+        <action name="bookMana" class="bookAction" method="bookMana">
+             <result name="success">/admin/book/bookMana.jsp</result>
+        </action>
+        <action name="bookDel" class="bookAction" method="bookDel">
+        </action>
+        <action name="bookAll" class="bookAction" method="bookAll">
+             <result name="success">/admin/book/bookAll.jsp</result>
+        </action>
+        <action name="bookSearch" class="bookAction" method="bookSearch">
+             <result name="success">/admin/book/bookAll.jsp</result>
+        </action>
+        
+        
+        <action name="jieyueAdd" class="jieyueAction" method="jieyueAdd">
+        </action>
+        <action name="jieyueMana" class="jieyueAction" method="jieyueMana">
+             <result name="success">/admin/jieyue/jieyueMana.jsp</result>
+        </action>
+        <action name="jieyueDel" class="jieyueAction" method="jieyueDel">
+        </action>
+        <action name="jieyueGuihuan" class="jieyueAction" method="jieyueGuihuan">
+        </action>
+        <action name="jieyue_mana_tea" class="jieyueAction" method="jieyue_mana_tea">
+             <result name="success">/admin/jieyue/jieyue_mana_tea.jsp</result>
+        </action>
+        <action name="jieyue_mana_user" class="jieyueAction" method="jieyue_mana_user">
+             <result name="success">/admin/jieyue/jieyue_mana_user.jsp</result>
+        </action>
+    </package>
+</struts>
